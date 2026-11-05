@@ -19,8 +19,8 @@ def get_price(data: dict):
     if len(buffer) < 50:
         print({price}) # jika kurang dari 20 maka nunggu
         return
-    ma_short = np.mean(buffer[-10:]) # hitung rata"
-    ma_long = np.mean(buffer[-50:])
+    ma_short = np.mean(buffer[-9:]) # hitung rata"
+    ma_long = np.mean(buffer[-21:])
     if ma_short > ma_long:
         signal = "BUY"
     else:
